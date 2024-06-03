@@ -30,7 +30,7 @@ namespace ExamenFinal
         }
                              //FUNCIONES
 
-        //MOSTRAR TODOS LOS AUTOS DE LA BASE DE DATOS Y ACTUALIZAR LA TABLA 
+        //MOSTRAR TODOS LOS CARROS DE LA BASE DE DATOS Y ACTUALIZAR LA TABLA 
         private void MostrarTodosLosCarros()
         {
             todos = Clscone.ObtenerTodosLosCarros();
