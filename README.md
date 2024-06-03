@@ -13,7 +13,7 @@ El programa permite realizar las siguientes operaciones en la base de datos de c
 
 2. **Insertar Nuevo Auto:**
    - Método `InsertarCarro` para añadir un nuevo carro a la base de datos utilizando parámetros SQL para asegurar
-   - la integridad de los datos.
+   la integridad de los datos.
 
 3. **Manejo de Datos en el Formulario:**
    - Creación de instancias y listas de objetos `Carros` para representar y almacenar información de los carros.
