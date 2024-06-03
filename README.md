@@ -4,7 +4,29 @@ Este proyecto consiste en un programa de gestión de inventario de carros, desar
 con una base de datos MySQL. A continuación, se describe brevemente la funcionalidad del 
 programa y su implementación.
 
-## Descripción General
+## Base de Datos
+
+La base de datos utilizada para este proyecto se llama `examenfinal` y contiene una tabla llamada `carros` con la siguiente estructura y sus tipos de dato:
+
+```
+CREATE DATABASE examenfinal;
+
+USE examenfinal;
+
+CREATE TABLE carros (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Marca VARCHAR(255),
+    Modelo VARCHAR(255),
+    Año INT,
+    Color VARCHAR(255),
+    Precio DECIMAL(10,2),
+    Descripcion VARCHAR(255),
+    Disponible TINYINT(1),
+    FechaIngreso DATE
+);
+```
+
+## Descripción General 
 
 El programa permite realizar las siguientes operaciones en la base de datos de carros:
 
