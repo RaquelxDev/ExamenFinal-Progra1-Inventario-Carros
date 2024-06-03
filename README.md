@@ -80,7 +80,7 @@ El formulario de la aplicación permite las siguientes interacciones:
 7. **Buscar Carro por ID:**
    - Función `BuscarRegistroPorID` que busca un carro usando su ID y muestra sus detalles en el formulario.
 
-8. **Salir del Programa**
+8. **Salir del Programa:**
    - Función `ConfirmarSalida` hace la pregunta si se desea salir, si la respuesta es si o no, se realizara su función.
 
 ## Navegación del Programa
