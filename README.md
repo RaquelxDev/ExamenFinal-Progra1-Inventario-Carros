@@ -80,17 +80,22 @@ El formulario de la aplicación permite las siguientes interacciones:
 7. **Buscar Carro por ID:**
    - Función `BuscarRegistroPorID` que busca un carro usando su ID y muestra sus detalles en el formulario.
 
+8. **Salir del Programa**
+   - Función `ConfirmarSalida` hace la pregunta si se desea salir, si la respuesta es si o no, se realizara su función.
+   - 
 ## Navegación del Programa
 
 El programa cuenta con varios botones para facilitar la interacción:
 
-- **Mostrar Todos:** Muestra todos los registros en el formulario.
-- **Modificar:** Actualiza el registro seleccionado.
-- **Guardar:** Guarda un nuevo registro en la base de datos.
-- **Eliminar:** Elimina el registro seleccionado.
-- **Buscar:** Busca un carro por ID y muestra sus detalles.
-- **Limpiar:** Limpia los campos del formulario.
-- **Salir:** Confirma y cierra la aplicación.
+- `buttonTodos_Clic:` Muestra todos los registros en el formulario.
+- `buttonModificar_Click` Actualiza el registro seleccionado.
+- `buttonGrabarRegistro_Clic` Guarda un nuevo registro en la base de datos.
+- `buttonEliminar_Click` Elimina el registro seleccionado.
+- `buttonBuscarID_Click` Busca un carro por ID y muestra sus detalles.
+- `buttonLimpiarRegistro_Click` Limpia los campos del formulario.
+- `buttonSiguiente_Click` Permite ir al siguiente registro
+- `buttonAnterior_Click` Permite ir al anterior registro
+- `buttonSalir_Click` Confirma y cierra la aplicación.
 
 ## Manejo de Errores
 
