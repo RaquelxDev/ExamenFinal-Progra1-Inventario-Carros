@@ -16,13 +16,13 @@ namespace ExamenFinal
         string connectionString = "server=localhost; database=examenfinal; user=root; password=123456";
         private MySqlConnection connection;
 
-        //CONSTRUCTOR
+        //CONSTRUCTOR 
         public ConexionMySql()
         {
             connection = new MySqlConnection(connectionString);
         }
 
-            //INSERTAR NUEVO AUTO
+            //INSERTAR NUEVO CARRO
             public void InsertarCarro(Carros carro)
         {
             try
@@ -51,7 +51,7 @@ namespace ExamenFinal
             }
         }
 
-        //ACTUALIZAR CARRO
+        //ACTUALIZAR EL CARRO
         public void ActualizarCarro(Carros carro)
         {
             try
@@ -84,7 +84,7 @@ namespace ExamenFinal
 
         }
 
-        //ELIMINAR CARRO
+        //ELIMINAR EL CARRO
         public void EliminarCarro(int id)
         {
             try
@@ -105,7 +105,7 @@ namespace ExamenFinal
             }
         }
 
-        //BUSCAR CARRO POR CÓDIGO
+        //BUSCAR EL CARRO POR CÓDIGO
         public Carros BuscarCarroPorID(int id)
         {
             Carros carroEncontrado = null;
