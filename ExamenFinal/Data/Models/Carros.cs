@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenFinal.Data.Models
 {
-    internal class Carro
+    internal class Carros
     {
         public int ID { get; set; }
         public string Marca { get; set; }
@@ -19,10 +19,10 @@ namespace ExamenFinal.Data.Models
         public DateTime FechaIngreso { get; set; }
 
         // Constructor sin parámetros
-        public Carro() { }
+        public Carros() { }
 
         // Constructor con parámetros
-        public Carro(int id, string marca, string modelo, int año, string color, decimal precio, string descripcion, bool disponible, DateTime fechaIngreso)
+        public Carros(int id, string marca, string modelo, int año, string color, decimal precio, string descripcion, bool disponible, DateTime fechaIngreso)
         {
             ID = id;
             Marca = marca;

@@ -19,9 +19,9 @@ namespace ExamenFinal
         ConexionMySql Clscone = new ConexionMySql();
 
         //INSTANCIA DE CLASE CARRO Y REFERENCIA A CARRO
-        Carro carro = new Carro();
+        Carros carro = new Carros();
 
-        List<Carro> todos;
+        List<Carros> todos;
         ClsCursor cursor1 = new ClsCursor();
 
         public Form1()
@@ -54,7 +54,7 @@ namespace ExamenFinal
             if (cursor1.current >= 0 && cursor1.current < cursor1.totalRegistros)
             {
                 //c es referencia a Carro
-                Carro c = todos[cursor1.current];
+                Carros c = todos[cursor1.current];
                 textBoxID.Text = c.ID.ToString();
                 textBoxMarca.Text = c.Marca;
                 textBoxModelo.Text = c.Modelo;
@@ -91,7 +91,7 @@ namespace ExamenFinal
                 }
                 else
                 {
-                    Carro nuevoCarro = new Carro
+                    Carros nuevoCarro = new Carros
                     {
                         ID = int.Parse(textBoxID.Text),
                         Marca = textBoxMarca.Text,
@@ -137,7 +137,7 @@ namespace ExamenFinal
                 }
 
                 // Crea un nuevo objeto carro con los valores del formulario
-                Carro carroActualizado = new Carro
+                Carros carroActualizado = new Carros
                 {
                     ID = int.Parse(textBoxID.Text),
                     Marca = textBoxMarca.Text,
@@ -182,6 +182,7 @@ namespace ExamenFinal
             dateTimePickerFechaIngreso.Value = DateTime.Now; //fecha predeterminada
         }
 
+        //ELIMINAR REGISTROS
         private void EliminarRegistro()
         {
             //Se revisa que el campo ID no este vacio
@@ -207,7 +208,7 @@ namespace ExamenFinal
                 {
                     if (Clscone.CarroExisteID(idABuscar))
                     {
-                        Carro carroEncontrado = Clscone.BuscarCarroPorID(idABuscar);
+                        Carros carroEncontrado = Clscone.BuscarCarroPorID(idABuscar);
                         if (carroEncontrado != null)
                         {
                             //Se actualiza el cursor a la posición del coche encontrado en la lista

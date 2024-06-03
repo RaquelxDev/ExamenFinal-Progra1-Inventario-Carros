@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace ExamenFinal
 {
+    //CONEXIÓN A LA BASE DE DATOS
     internal class ConexionMySql
     {
 
@@ -22,7 +23,7 @@ namespace ExamenFinal
         }
 
             //INSERTAR NUEVO AUTO
-            public void InsertarCarro(Carro carro)
+            public void InsertarCarro(Carros carro)
         {
             try
             {
@@ -51,7 +52,7 @@ namespace ExamenFinal
         }
 
         //ACTUALIZAR CARRO
-        public void ActualizarCarro(Carro carro)
+        public void ActualizarCarro(Carros carro)
         {
             try
             {
@@ -105,9 +106,9 @@ namespace ExamenFinal
         }
 
         //BUSCAR CARRO POR CÓDIGO
-        public Carro BuscarCarroPorID(int id)
+        public Carros BuscarCarroPorID(int id)
         {
-            Carro carroEncontrado = null;
+            Carros carroEncontrado = null;
             try
             {
                 string query = "SELECT * FROM carros WHERE ID = @ID";
@@ -118,7 +119,7 @@ namespace ExamenFinal
                 {
                     if (reader.Read())
                     {
-                        carroEncontrado = new Carro
+                        carroEncontrado = new Carros
                         {
                             ID = reader.GetInt32("ID"),
                             Marca = reader.IsDBNull(reader.GetOrdinal("Marca")) ? string.Empty : reader.GetString("Marca"),
@@ -170,9 +171,9 @@ namespace ExamenFinal
         }
 
         //LISTA PARA OBTENER LOS REGISTROS DE LA TABLA CARROS
-        public List<Carro> ObtenerTodosLosCarros()
+        public List<Carros> ObtenerTodosLosCarros()
         {
-            List<Carro> carros = new List<Carro>();
+            List<Carros> carros = new List<Carros>();
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -186,7 +187,7 @@ namespace ExamenFinal
 
                     while (reader.Read())
                     {
-                        Carro carro = new Carro
+                        Carros carro = new Carros
                         {
                             ID = reader.IsDBNull(reader.GetOrdinal("ID")) ? 0 : reader.GetInt32("ID"),
                             Marca = reader.IsDBNull(reader.GetOrdinal("Marca")) ? string.Empty : reader.GetString("Marca"),

@@ -100,7 +100,7 @@
   <ItemGroup>
     <Compile Include="ConexionMySql.cs" />
     <Compile Include="Data\Models\ClsCursor.cs" />
-    <Compile Include="Data\Models\Carro.cs" />
+    <Compile Include="Data\Models\Carros.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
