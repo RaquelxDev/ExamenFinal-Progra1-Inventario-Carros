@@ -105,6 +105,8 @@ Todas las operaciones incluyen manejo de excepciones mediante bloques `try-catch
 
 Este programa de gestión de inventario de carros proporciona una manera eficiente de manejar los registros de carros utilizando C# y MySQL. La estructura modular y el manejo de datos seguro aseguran una operación fiable y efectiva.
 
+¡Gracias! 🤗
+
 
 
 
