@@ -82,7 +82,7 @@ El formulario de la aplicación permite las siguientes interacciones:
 
 8. **Salir del Programa**
    - Función `ConfirmarSalida` hace la pregunta si se desea salir, si la respuesta es si o no, se realizara su función.
-   - 
+
 ## Navegación del Programa
 
 El programa cuenta con varios botones para facilitar la interacción:
