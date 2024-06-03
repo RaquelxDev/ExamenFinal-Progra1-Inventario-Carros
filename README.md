@@ -87,7 +87,7 @@ El formulario de la aplicación permite las siguientes interacciones:
 
 El programa cuenta con varios botones para facilitar la interacción:
 
-- `buttonTodos_Clic:` Muestra todos los registros en el formulario.
+- `buttonTodos_Click` Muestra todos los registros en el formulario.
 - `buttonModificar_Click` Actualiza el registro seleccionado.
 - `buttonGrabarRegistro_Clic` Guarda un nuevo registro en la base de datos.
 - `buttonEliminar_Click` Elimina el registro seleccionado.
